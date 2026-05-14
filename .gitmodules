@@ -1,18 +1,24 @@
 [submodule "frameworkshop-angular"]
 	path = frameworkshop-angular
 	url = https://github.com/JoniBach/frameworkshop-angular.git
+	branch = main
 [submodule "frameworkshop-react"]
 	path = frameworkshop-react
 	url = https://github.com/JoniBach/frameworkshop-react.git
+	branch = main
 [submodule "frameworkshop-vue"]
 	path = frameworkshop-vue
 	url = https://github.com/JoniBach/frameworkshop-vue.git
+	branch = main
 [submodule "frameworkshop-svelte"]
 	path = frameworkshop-svelte
 	url = https://github.com/JoniBach/frameworkshop-svelte.git
+	branch = main
 [submodule "frameworkshop-solid"]
 	path = frameworkshop-solid
 	url = https://github.com/JoniBach/frameworkshop-solid.git
+	branch = main
 [submodule "frameworkshop-deno"]
 	path = frameworkshop-deno
 	url = https://github.com/JoniBach/demo_deno.git
+	branch = main
