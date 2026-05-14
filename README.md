@@ -4,12 +4,14 @@ Frameworkshop is a multi-framework learning workspace. It contains small worksho
 
 ## Projects
 
-- `frameworkshop-angular` - Angular workshop project
-- `frameworkshop-react` - React workshop project
-- `frameworkshop-vue` - Vue workshop project
-- `frameworkshop-svelte` - Svelte workshop project
-- `frameworkshop-solid` - Solid workshop project
-- `frameworkshop-deno` - Deno workshop project
+- `frameworkshop-angular` - An Angular 21 workshop app generated with Angular CLI. It contains a standalone email input example using Angular reactive forms, validation, `HttpClient`, and a reusable text input component pattern. The app reads and writes saved email data through the shared Deno backend.
+- `frameworkshop-react` - A React 19 + TypeScript + Vite workshop app. It demonstrates a routed email input page using `react-hook-form`, controlled validation, reusable components, and fetch calls to the Deno KV API.
+- `frameworkshop-vue` - A Vue 3 + TypeScript + Vite workshop app. It includes Vue Router, single-file components, a reusable `TextInput` component, computed form validation, and an input example that persists data through the Deno backend.
+- `frameworkshop-svelte` - A SvelteKit 2 + TypeScript workshop app. It includes the generated Svelte demo content plus an `/input-example` route that uses Svelte state, validation, and frontend fetch calls to save and retrieve email data from Deno KV.
+- `frameworkshop-solid` - A SolidJS + TypeScript + Vite workshop app. It demonstrates Solid signals, conditional rendering, reusable components, and an input example page wired to the same Deno backend API.
+- `frameworkshop-deno` - A Deno backend service for the workshop examples. It exposes `/input-example` with CORS support, handles `GET`, `POST`, and `OPTIONS`, validates JSON requests, stores the latest submitted email in Deno KV, and includes tests for the handler and basic utility behaviour.
+
+Together, the frontend projects are intended to show how similar UI, routing, form validation, component, and API-integration ideas are expressed across different frameworks. The Deno project acts as the shared backend used by the frontend examples.
 
 ## Getting started
 
@@ -66,3 +68,5 @@ npm run workshop:react
 ## Purpose
 
 This repository is intended for learning, experimentation, and comparing how similar ideas are implemented across different frameworks.
+
+The shared starter user journey is intentionally simple: open any frontend workshop, visit the email input example, enter an email address, validate it in the UI, submit it to the shared Deno backend, and see the saved value loaded back from Deno KV. This gives each framework project the same practical baseline for exploring routing, components, forms, validation, API calls, and backend integration.
