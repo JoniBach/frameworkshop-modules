@@ -16,7 +16,7 @@ Frameworkshop is a multi-framework learning workspace. It contains small worksho
 Clone this repository with its submodules:
 
 ```bash
-git clone --recursive <repo-url>
+git clone --recursive https://github.com/JoniBach/frameworkshop-modules.git
 ```
 
 If you have already cloned the repository without submodules, initialise them:
